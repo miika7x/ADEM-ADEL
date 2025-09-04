@@ -61,7 +61,7 @@
     img.profile:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(51, 214, 255, 0.9); }
 
     /* ✨ الروابط الاجتماعية */
-    .social-links { display: flex; flex-direction: column; align-items: center; gap: 40px; margin-top: 10px; position: relative; }
+    .social-links { display: flex; flex-direction: column; align-items: center; gap: 25px; margin-top: 10px; position: relative; }
 
     .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; border-radius: 30px; font-size: 18px; font-weight: bold; color: white; text-decoration: none; width: 220px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); background-size: 200% auto; background-position: left center; position: relative; overflow: hidden; animation: shine 5s linear infinite; transition: transform 0.3s, box-shadow 0.3s; }
     .btn i { font-size: 20px; }
@@ -80,6 +80,23 @@
     .whatsapp:hover { box-shadow: 0 0 10px #25d366, 0 0 20px #128c7e, 0 0 30px #075e54; }
     .telegram:hover { box-shadow: 0 0 10px #0088cc, 0 0 20px #00c6ff, 0 0 30px #00f0ff; }
     .facebook:hover { box-shadow: 0 0 10px #1877f2, 0 0 20px #4a90e2, 0 0 30px #00c6ff; }
+
+    /* ✨ أيقونات صغيرة أقرب لبعض */
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 30px;
+      margin: 0 8px; /* قربنا الأيقونات */
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ffcc00;
+    }
 
     /* زر الهاتف */
     .phone-fixed { position: fixed; bottom: 20px; right: 20px; background: linear-gradient(45deg, #11998e, #38ef7d); color: white; padding: 12px 20px; border-radius: 30px; font-size: 16px; font-weight: bold; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; animation: pulse 3s infinite; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; }
@@ -111,6 +128,15 @@
     <a href="https://www.facebook.com/a.e.shuu.2025" target="_blank" rel="noopener noreferrer" class="btn facebook">
       <i class="fab fa-facebook"></i> Facebook
     </a>
+  </div>
+
+  <!-- أيقونات صغيرة تحت الأزرار -->
+  <div class="social-icons">
+    <a href="https://www.instagram.com/cyber.ade/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.snapchat.com/add/adelbesseghie31" target="_blank"><i class="fab fa-snapchat-ghost"></i></a>
+    <a href="https://wa.me/213795319269" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://t.me/َAdelSHUU" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://www.facebook.com/a.e.shuu.2025" target="_blank"><i class="fab fa-facebook"></i></a>
   </div>
 
   <a href="tel:0795319269" class="phone-fixed">
